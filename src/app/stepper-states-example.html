@@ -2,14 +2,13 @@
 <mat-horizontal-stepper>
   <!-- #docregion label -->
   <mat-step label="Enjuague" state="phone">
-    <p>A pleno</p>
+    <p><mat-icon>flash_on</mat-icon>A pleno - {{temporizador}}</p>
     <div>
-      - {{temporizador}}
       <mat-spinner></mat-spinner>
     </div>
   </mat-step>
   <!-- #enddocregion label -->
-  <mat-step label="Alcalino" state="chat">
+  <mat-step label="Alcalino" state="cached">
     <p>A pleno</p>
     <div>
       <mat-spinner>asdas</mat-spinner>
